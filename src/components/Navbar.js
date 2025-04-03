@@ -34,7 +34,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand href="/portfolio" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -58,7 +58,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/about"
+                to="/portfolio/about"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> À propos
@@ -68,7 +68,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/portfolio/project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -81,7 +81,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/formation"
+                to="/portfolio/formation"
                 onClick={() => updateExpanded(false)}
               >
                 <IoSchoolOutline style={{ marginBottom: "2px" }} /> Formation
@@ -91,7 +91,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/portfolio/resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> CV
