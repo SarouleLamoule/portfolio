@@ -68,6 +68,16 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/portfolio/formation"
+                onClick={() => updateExpanded(false)}
+              >
+                <IoSchoolOutline style={{ marginBottom: "2px" }} /> Formation
+              </Nav.Link>
+            </Nav.Item>
+            
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/portfolio/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -75,16 +85,6 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projets
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/portfolio/formation"
-                onClick={() => updateExpanded(false)}
-              >
-                <IoSchoolOutline style={{ marginBottom: "2px" }} /> Formation
               </Nav.Link>
             </Nav.Item>
 
