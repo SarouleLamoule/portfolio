@@ -2,89 +2,138 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import karma from "../../Assets/Projects/karma.png";
+import animeo from "../../Assets/Projects/animeo.png";
+import gtarp from "../../Assets/Projects/default.png";
+import { FaBriefcase, FaGraduationCap, FaTools } from "react-icons/fa";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+      <Container> 
+        {/* Projets Professionnels */}
+        <h2 className="project-subheading">
+          <FaBriefcase style={{ marginRight: "10px" }} /> Projets professionnels
+        </h2>
+        <p className="project-description">
+          Au cours de mes différentes alternances, j'ai eu l'opportunité de travailler sur des projets complexes et variés dans des contextes professionnels exigeants.
+          Bien que ces projets soient soumis à des clauses de confidentialité, ils m'ont permis de développer des compétences concrètes dans des domaines clés :
         </p>
+
+        <div className="project-section-content">
+          <div className="project-skills">
+            • Développement web d'<span className="purple">applications internes complexes</span><br/>
+            • Refonte complète d'applications <span className="purple">Angular</span><br/>
+            • <span className="purple">CI/CD</span> avec <span className="purple">GitLab</span> et <span className="purple">GitHub Actions</span><br/>
+            • <span className="purple">Sécurité</span> et gestion des accès<br/>
+            • Mise en place et gestion d'<span className="purple">infrastructure</span> (<span className="purple">Docker</span>, <span className="purple">VPS</span>, <span className="purple">reverse proxy</span>…)<br/>
+            • Outils métiers sur mesure
+          </div>
+
+          <div className="project-tech-stack">
+            💡 Ces projets ont impliqué l'utilisation de technologies comme <span className="purple">Angular</span>, <span className="purple">Node.js</span>, <span className="purple">.NET</span>, <span className="purple">Docker</span>, et <span className="purple">GitLab CI/CD</span>, dans un environnement orienté production, avec des pratiques de développement rigoureuses.
+          </div>
+
+          <p className="project-subtitle">
+            Voici quelques exemples significatifs parmi les nombreux projets sur lesquels j'ai travaillé :
+          </p>
+
+          <div className="project-example">
+            <h3>Application mobile de gestion viticole</h3>
+            • Application multiplateforme réalisée sur une durée d'un an en <span className="purple">Xamarin</span><br/>
+            • Simplification de la gestion quotidienne des viticulteurs bordelais<br/>
+            • Gestion des <span className="purple">stocks</span>, <span className="purple">interventions</span>, <span className="purple">traçabilité</span><br/>
+            • <span className="purple">Synchronisation cloud</span> et travail hors-ligne
+          </div>
+
+          <div className="project-example">
+            <h3>Coffre-fort numérique</h3>
+            • Développement d'une solution sécurisée de gestion des <span className="purple">identifiants</span><br/>
+            • Système de <span className="purple">chiffrement</span> des données sensibles<br/>
+            • Gestion fine des <span className="purple">accès</span> et des <span className="purple">droits</span><br/>
+            • Interface d'<span className="purple">administration</span> complète
+          </div>
+
+          <div className="project-example">
+            <h3>Refonte logiciel interne</h3>
+            • Refonte complète d'un logiciel interne d'entreprise<br/>
+            • Technologies : <span className="purple">.NET</span>, <span className="purple">SQL Server</span>, <span className="purple">WPF</span><br/>
+            • Détails confidentiels
+          </div>
+        </div>
+
+        {/* Projets Académiques */}
+        <h2 className="project-subheading">
+          <FaGraduationCap style={{ marginRight: "10px" }} /> Projets académiques
+        </h2>
+        <p className="project-description">
+          Durant ma formation, j'ai participé à de nombreux projets pédagogiques, seul ou en équipe. Voici quelques exemples représentatifs parmi les différents projets réalisés :
+        </p>
+
+        <div className="project-section-content">
+          <div className="project-example">
+            <h3>Projets académiques notables</h3>
+            • Application Android de gestion d'entreprise de bus (<span className="purple">Android Studio</span>, <span className="purple">Java</span>)<br/>
+            - Gestion des lignes, conducteurs, véhicules et horaires<br/>
+            - Base de données locale <span className="purple">SQLite</span><br/>
+            - Interface utilisateur <span className="purple">Material Design</span><br/>
+            <br/>
+            • Blog avec CMS personnalisé (<span className="purple">PHP</span> & <span className="purple">MySQL</span>)<br/>
+            • API REST (<span className="purple">Node.js</span> / <span className="purple">Express</span>)<br/>
+            • Application de gestion (<span className="purple">C#</span> avec <span className="purple">WPF</span>)<br/>
+            • CRM (<span className="purple">Laravel</span>)<br/>
+            • Dashboard système (<span className="purple">Python</span> / <span className="purple">Flask</span>)<br/>
+            • App météo (<span className="purple">React</span>)
+          </div>
+        </div>
+
+        {/* Projets Personnels */}
+        <h2 className="project-subheading">
+          <FaTools style={{ marginRight: "10px" }} /> Projets personnels
+        </h2>
+        <p className="project-description">
+          Je suis également très actif sur des projets perso, notamment dans les domaines communautaires, le divertissement et la passion :
+        </p>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={animeo}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="🎥 Animéo — animeovf.fr"
+              description="Membre de l'équipe de développement d'Animéo, une plateforme communautaire autour des animés. Contribution à l'architecture interne et création d'outils complémentaires."
+              demoLink="https://animeovf.fr"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={karma}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="🤖 Karma – Bot Discord"
+              description="Bot Discord exclusif pour la communauté Animéo avec système de Karma/Coins, Clans, événements et fonctions avancées. Stack : Node.js, MongoDB, Discord.js, GitHub Actions."
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={gtarp}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="🚗 Saroule RP – Serveur GTA RP privé"
+              description="Projet personnel de serveur GTA RP développé entièrement from scratch dans un but d'apprentissage autonome (Infrastructure complète FiveM, Scripts personnalisés en Lua)"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={gtarp}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="🎮 Serveur Cache-Cache GTA RP"
+              description="Projet fun développé pour jouer entre amis, proposant des sessions de cache-cache multijoueur dans des environnements personnalisés. ( Projet en cours )"
+              demoLink=""
             />
           </Col>
         </Row>

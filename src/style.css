@@ -451,6 +451,10 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
+.project-subtitle {
+  color: #fff;
+}
+
 .project-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
@@ -536,6 +540,142 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+}
+
+/* Nouveaux styles pour la section projets */
+.project-subheading {
+  color: white !important;
+  font-size: 1.8em !important;
+  font-weight: 400 !important;
+  padding-top: 30px !important;
+  padding-bottom: 20px !important;
+}
+
+.project-description {
+  color: white !important;
+  font-size: 1.1em !important;
+  padding: 10px 0 !important;
+  text-align: justify !important;
+}
+
+.project-list {
+  color: white !important;
+  font-size: 1.1em !important;
+  padding-left: 20px !important;
+  margin-bottom: 20px !important;
+  list-style-type: none !important;
+}
+
+.project-list li {
+  margin-bottom: 10px !important;
+  position: relative !important;
+  padding-left: 25px !important;
+}
+
+.project-list li:before {
+  content: "▹" !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: var(--imp-text-color) !important;
+}
+
+.project-highlight {
+  color: white !important;
+  font-size: 1.1em !important;
+  padding: 15px !important;
+  margin: 20px 0 !important;
+  border-left: 4px solid var(--imp-text-color) !important;
+  background-color: rgba(119, 53, 136, 0.1) !important;
+}
+
+/* Nouveaux styles pour les sections projets */
+.project-section-content {
+  padding: 20px 0;
+}
+
+.project-skills, .project-example {
+  background: rgba(119, 53, 136, 0.05);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  line-height: 2;
+  font-size: 1.1em;
+  color: white !important;
+  white-space: normal;
+}
+
+.project-skills br, .project-example br {
+  display: block;
+  margin: 8px 0;
+  content: "";
+}
+
+.project-tech-stack {
+  background: rgba(119, 53, 136, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 1.15em;
+  text-align: center;
+  color: white !important;
+}
+
+.project-subtitle {
+  font-size: 1.3em;
+  margin: 30px 0;
+  color: white;
+  font-weight: 500;
+}
+
+.project-example h3 {
+  color: var(--imp-text-color);
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.project-description {
+  color: white !important;
+  font-size: 1.1em !important;
+  padding: 15px 0 !important;
+  text-align: justify !important;
+  line-height: 1.8 !important;
+}
+
+.project-list {
+  color: white !important;
+  font-size: 1.1em !important;
+  padding-left: 20px !important;
+  margin-bottom: 20px !important;
+  list-style-type: none !important;
+}
+
+.project-list li {
+  margin-bottom: 10px !important;
+  position: relative !important;
+  padding-left: 25px !important;
+}
+
+.project-list li:before {
+  content: "▹" !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: var(--imp-text-color) !important;
+}
+
+.project-highlight {
+  color: white !important;
+  font-size: 1.1em !important;
+  padding: 15px !important;
+  margin: 20px 0 !important;
+  border-left: 4px solid var(--imp-text-color) !important;
+  background-color: rgba(119, 53, 136, 0.1) !important;
+}
+
+/* Nouveaux styles pour les sections projets */
+.project-section-content {
+  padding: 20px 0;
 }
 
 /* --------- */
@@ -740,4 +880,85 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* Formation Section */
+.formation-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.formation-item {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #8a49a8;
+}
+
+.formation-icon {
+  color: #8a49a8;
+  font-size: 2em;
+  margin-right: 15px;
+}
+
+.formation-title {
+  color: #fff !important;
+  font-size: 1.2em !important;
+  font-weight: 600 !important;
+  padding-top: 8px !important;
+}
+
+.formation-date {
+  color: #8a49a8 !important;
+  font-size: 0.9em !important;
+  padding-top: 5px !important;
+}
+
+.formation-details {
+  color: #fff !important;
+  font-size: 1em !important;
+  padding-top: 5px !important;
+}
+
+.formation-item h3 {
+  color: #cd5ff8;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* Certification Section */
+.formation-section-title {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.certification-category {
+  color: #cd5ff8;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.certification-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.certification-item {
+  color: #fff;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.certification-icon {
+  color: #8a49a8;
+  font-size: 1.2em;
 }
