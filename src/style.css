@@ -403,9 +403,10 @@ button:focus {
 /* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
+  margin-top: auto;
+  width: 100%;
 }
 .footer-copywright {
   text-align: center !important;
@@ -593,7 +594,8 @@ button:focus {
   padding: 20px 0;
 }
 
-.project-skills, .project-example {
+.project-skills,
+.project-example {
   background: rgba(119, 53, 136, 0.05);
   padding: 25px;
   border-radius: 10px;
@@ -604,7 +606,8 @@ button:focus {
   white-space: normal;
 }
 
-.project-skills br, .project-example br {
+.project-skills br,
+.project-example br {
   display: block;
   margin: 8px 0;
   content: "";
@@ -961,4 +964,88 @@ button:focus {
 .certification-icon {
   color: #8a49a8;
   font-size: 1.2em;
+}
+
+/* Styles pour les accordéons des projets */
+.accordion {
+  --bs-accordion-bg: transparent !important;
+  --bs-accordion-border-color: rgba(155, 126, 172, 0.2);
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-btn-color: white !important;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-active-color: #cd5ff8;
+  --bs-accordion-btn-focus-border-color: rgba(155, 126, 172, 0.5);
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-item {
+  background: transparent !important;
+  border: 1px solid rgba(155, 126, 172, 0.2);
+  margin-bottom: 15px;
+}
+
+.accordion-button {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 1.5rem;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: white !important;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #cd5ff8 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.accordion-body {
+  color: white;
+  padding: 2rem;
+  background: transparent !important;
+}
+
+.project-example {
+  background: rgba(155, 126, 172, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(155, 126, 172, 0.1);
+}
+
+.project-example h3 {
+  color: #cd5ff8;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+/* Style pour le conteneur principal */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style pour le conteneur de contenu principal */
+.project-section,
+.about-section,
+.resume-section,
+.home-section {
+  flex: 1;
+  width: 100%;
 }
