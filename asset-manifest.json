@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.beaae6fc.css",
-    "main.js": "/portfolio/static/js/main.2bd61e41.js",
+    "main.js": "/portfolio/static/js/main.5692f847.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/karma.png": "/portfolio/static/media/karma.0bf8c3e2f8d736f5a486.png",
+    "static/media/CV_TIM_PERRICHOT-CHAUSSAT.pdf": "/portfolio/static/media/CV_TIM_PERRICHOT-CHAUSSAT.5b3e259508d67d117686.pdf",
     "static/media/avatar.svg": "/portfolio/static/media/avatar.30071cd29d3245e50ce1d00ad7a0f732.svg",
-    "static/media/CV.pdf": "/portfolio/static/media/CV.a13642df11b3444bbc54.pdf",
     "static/media/home-main.svg": "/portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/default.png": "/portfolio/static/media/default.6a08447a92aa8b46a2a8.png",
@@ -15,11 +15,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/pre.svg": "/portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "main.beaae6fc.css.map": "/portfolio/static/css/main.beaae6fc.css.map",
-    "main.2bd61e41.js.map": "/portfolio/static/js/main.2bd61e41.js.map",
+    "main.5692f847.js.map": "/portfolio/static/js/main.5692f847.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.beaae6fc.css",
-    "static/js/main.2bd61e41.js"
+    "static/js/main.5692f847.js"
   ]
 }
